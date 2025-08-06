@@ -64,7 +64,7 @@ const Navbar = (props: Props) => {
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-3xl sm:text-4xl font-bold">Base</h1>
-          <div className="hidden md:flex justify-between items-center gap-4 text-gray-400 text-lg">
+          <div className="hidden lg:flex justify-between items-center gap-4 text-gray-400 text-lg">
             {navLinks.map((link) => (
               <Link
                 key={link}
