@@ -8,6 +8,14 @@ import {
   ArrowPathIcon,
 } from "@heroicons/react/24/outline";
 
+export interface PricingPlan {
+  title: string;
+  monthlyPrice: string;
+  yearlyPrice: string;
+  features: string[];
+  buttonColor: ButtonColor;
+}
+
 export interface Feature {
   icon: IconKey;
   title: string;
@@ -74,5 +82,33 @@ export const highlights = [
     title: "Regular Updates",
     description:
       "Continuously improved and updated with bug fixes, feature upgrades, and new integrations.",
+  },
+];
+// components/pricing/data.ts
+export const pricingData: PricingPlan[] = [
+  {
+    title: "Starter",
+    monthlyPrice: "$29",
+    yearlyPrice: "$290",
+    buttonColor: "blue",
+    features: [
+      "400 GB Storage",
+      "Unlimited Photos & Videos",
+      "Exclusive Support",
+    ],
+  },
+  {
+    title: "Growth Plan",
+    monthlyPrice: "$59",
+    yearlyPrice: "$590",
+    buttonColor: "green",
+    features: ["600 GB Storage", "Priority Support", "Advanced Analytics"],
+  },
+  {
+    title: "Business",
+    monthlyPrice: "$139",
+    yearlyPrice: "$1390",
+    buttonColor: "red",
+    features: ["1 TB Storage", "Dedicated Support", "Custom Integrations"],
   },
 ];
