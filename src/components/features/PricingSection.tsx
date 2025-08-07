@@ -60,7 +60,9 @@ const PricingSection = (props: Props) => {
               <h3 className="font-semibold mb-10 text-2xl">{category.title}</h3>
               <p className="font-bold text-3xl flex items-center gap-2 mb-2 transition-all duration-300 ease-in-out">
                 {enabled ? category.yearlyPrice : category.monthlyPrice}{" "}
-                <span className="text-sm font-normal">per month</span>
+                <span className="text-sm font-normal">
+                  {enabled ? "per year" : "per month"}{" "}
+                </span>
               </p>
               <p className="text-gray-500 mb-6">No credit card required</p>
               <Button
